@@ -1,36 +1,41 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-#title {
-  background-color: #ff4c68;
-  color: #fff;
-}
-
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 900;
-  line-height: 1.5;
-}
-
-h3 {
-  font-size: 1.5rem;
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-}
-
-h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.5;
 }
 
 p {
   color: #7f7f7f;
 }
 
+/* Headings */
+.big-heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
+}
+
+/* Containers */
+.colored-section {
+  background-color: #fc4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
 }
 
 /* Navbar */
@@ -54,6 +59,12 @@ p {
   margin: 5% 3% 5% 0;
 }
 
+/* Title Section */
+#title .container-fluid {
+  padding-top: 3%;
+  text-align: left;
+}
+
 /* Title Image */
 .title-image {
   position: absolute;
@@ -64,10 +75,11 @@ p {
 
 /* Section Features */
 #features {
-  background-color: #fff;
-  padding: 7% 15%;
   position: relative;
-  text-align: center;
+}
+
+.feature-title {
+  font-size: 1.5rem;
 }
 
 .icon {
@@ -85,11 +97,13 @@ p {
 }
 
 /* Testimonials */
-.carousel-item {
+#testimonials {
   background-color: #ef8172;
-  color: #fff;
-  padding: 7% 15%;
-  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -101,7 +115,11 @@ p {
 #press {
   background-color: #ef8172;
   padding-bottom: 3%;
-  text-align: center;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .press-logo {
@@ -112,7 +130,6 @@ p {
 /* Pricing */
 #pricing {
   padding: 7% 10%;
-  text-align: center;
 }
 
 .pricing-col {
@@ -120,37 +137,29 @@ p {
 }
 
 @media (max-width: 1000px) {
-  h3 {
-    font-size: 2.5rem;
-  }
-  p,a,em {
+  p, em {
     font-size: 1.5rem;
   }
+
+  .feature-title, .card-title {
+    font-size: 1.4rem;
+  }
+
+  .nav-link {
+    font-size: 2rem;
+  }
+
   .title-image {
     position: static;
     transform: rotate(0);
   }
-  #title{
+
+  #title {
     text-align: center;
   }
-
-}
-
-/* CTA */
-#cta {
-  background-color: #ff4c68;
-  color: #fff;
-  padding: 7% 15%;
-  text-align: center;
 }
 
 /* Footer */
-#footer{
-  background-color: #fff;
-  padding: 7%;
-  text-align: center;
-}
-
 .f-icon {
   padding: 1rem;
 }
